@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2 class="text-center">detik</h2>
+{% for i in images_populer %}
+            {{ i | safe }}
+          <a href="{{i.find('a').find('href')|safe}}">{{i.find('a').find('img')['title']|safe}}</a>
+        {% endfor %}
+{% endblock %}
