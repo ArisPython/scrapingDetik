@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scrap</title>
+</head>
+<body>
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <li><a href="/detik-populer">DETIK-SCRAP</a></li>
+        {% for i in images_populer %}
+            {{ i | safe }}
+        {% endfor %}
+</body>
+</html>
